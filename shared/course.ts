@@ -1,8 +1,8 @@
 
 export interface Course {
   _id: string;
-  seqNo:number;
-  url:string;
+  seqNo: number;
+  url: string;
   iconUrl: string;
   courseListIcon: string;
   description: string;
@@ -12,8 +12,7 @@ export interface Course {
   promo: boolean;
 }
 
-
-export function compareCourses(c1:Course, c2: Course) {
+export function compareCourses(c1: Course, c2: Course) {
 
   const compare = c1.seqNo - c2.seqNo;
 
